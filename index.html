@@ -1,18 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 	<head>
-		<title> Michael Vander Lugt </title>
-
-		<link rel="stylesheet" href="./style.css" type="text/css"/>
+		<!-- "Milk was a bad choice" -->
+		<!-- ^ What movie is that from? -->
+		
+		<title>Michael Vander Lugt</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body>
-		<center> 
-			<br><br><br><br><br><br>
-			<img src='./imgs/mike.png'>
-			<h1 class="center">Michael Vander Lugt</h1> 
-			<h3 class="center"> Hi! I'm a Junior studying computer science at the University of Michigan. <br> I have a strong interest in web development, user interface design, and anything to do with basketball. <br> Please feel free to download my resume below to learn more. </h3>
-			<br>
-			<a href="./files/Michael_VanderLugt_Resume.pdf" download> <button> Download Resume </button> </a>
-		</center>
+	<body class="loading">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Michael Vander Lugt</h1>
+						<p id="info">Hi! I'm a Junior studying computer science at the University of Michigan. <br> I have a strong interest in web development, user interface design, and anything to do with the Internet. When I’m not on my computer, I'm probably playing basketball, snowboarding, or fantasizing about getting a dog. Please feel free to download my resume below to learn more.</p>
+						<br>
+						<nav>
+							<ul>
+								<a href="./files/VanderLugt_Michael_Resume.pdf" download> <button class="btn btn-default"> Download Resume </button> </a>
+							</ul>
+						</nav>
+					</header>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
 	</body>
 </html>
