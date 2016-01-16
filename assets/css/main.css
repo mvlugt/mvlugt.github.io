@@ -502,7 +502,7 @@
 		opacity: 0;
 		position: relative;
 		text-align: center;
-		top: -1em;
+		top: -5em;
 		vertical-align: middle;
 		width: 90%;
 		max-width: 50%;
@@ -519,6 +519,11 @@
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
+			color: white;
+		}
+		#header img {
+			max-width: 40%;
+			max-height: 40%;
 		}
 
 		#header nav {
